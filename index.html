@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQueary plugin test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--------- countdown plugin use -------->
+    <h1> Our Offer Will Be Closed At</h1>
+
+   <div id="getting-started"> </div>
+
+
+
+
+ <!------- counterUp plugin use ---------->
+ <h1 class="co-h1"> Our services feedback</h1>
+
+   <div class="maincount">
+    <div class="count1">
+       <p class="counter"> 1100</p> <br>
+       <span class="detail1"> Total Projects</span>
+    </div>
+
+    <div class="count2">
+       <p class="counter">900</p> <br>
+       <span class="detail2">Total User</span>
+
+     </div>
+
+     <div class="count3">
+        <p class="counter"> 800</p>
+        <span class="detail3">Happy Client</span>
+
+     </div>
+</div>
+
+  
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+   crossorigin="anonymous">
+
+</script>
+   
+   <script src="jquery.countdown.min.js"></script>
+
+   <script>
+    $(document).ready(function(){
+    
+        $('#getting-started').countdown('2023/01/30', function(event) {
+        
+        $(this).html(event.strftime('<div> <span>%D</span> <span>Days</span> </div> <div> <span>%H</span> <span>Hours</span> </div> <div> <span>%M</span> <span>Minutes</span> </div> <div> <span>%S</span> <span>Second</span> </div>'));
+    
+    });
+    s
+    });
+        </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+
+<script>
+    jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+    
+
+    
+
+    
+
+</body>
+</html>
